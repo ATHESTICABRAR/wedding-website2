@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Abrar & RAZA  - Wedding Invitation</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Nastaliq+Urdu:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Door Animation Overlay -->
+    <div id="door-overlay">
+        <video id="door-video" class="door-video" playsinline muted>
+            <source src="assets/door_video.mp4" type="video/mp4">
+        </video>
+        <div class="seal" id="open-seal">
+            <div class="seal-inner">OPEN</div>
+        </div>
+    </div>
+    <!-- Background sparkles overlay -->
+    <div id="sparkles-container"></div>
+
+    <div class="main-wrapper">
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="content-box glassmorphism">
+                <img src="assets/bismillah.png" class="bismillah-img" alt="Bismillah">
+                <p class="blessings">With the Blessings of Allah (SWT)</p>
+                
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="icon">✦</span>
+                    <span class="line"></span>
+                </div>
+
+                <p class="request-text">Request the Honor of Your Presence<br>At The Blessed Nikah Ceremony Of</p>
+
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="icon">✦</span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="details-container">
+                    <div class="detail-item">
+                        <span class="label">Date</span>
+                        <span class="value">[DATE]</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Time</span>
+                        <span class="value">[TIME]</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Venue</span>
+                        <span class="value">[VENUE NAME]</span>
+                    </div>
+                </div>
+
+                <p class="reception">Followed by Reception</p>
+                <p class="duas">"Your Presence and Duas Will Be Our Greatest Blessing"</p>
+            </div>
+        </section>
+
+        <!-- Scratch to Reveal Section -->
+        <section class="scratch-section" id="reveal">
+            <div class="content-box glassmorphism">
+                <!-- Names Above the Card -->
+                <div class="names-container" style="margin-bottom: 2rem;">
+                    <h2 class="name groom">Mohammed Abrar</h2>
+                    <span class="ampersand">&</span>
+                    <h2 class="name bride">Raza</h2>
+                </div>
+                
+                <h3 class="section-title" style="margin-bottom: 1rem; font-size: 1.5rem;">The Big Day</h3>
+                <p class="rsvp-subtitle" style="margin-bottom: 2rem;">Scratch the golden foil below to reveal our wedding date!</p>
+                
+                <div class="scratch-container premium-frame">
+                    <!-- The secret content hidden underneath -->
+                    <div class="scratch-secret">
+                        <h4 class="secret-title">Save The Date</h4>
+                        <p class="secret-date">25th December, 2026</p>
+                    </div>
+                    <!-- The canvas that covers it -->
+                    <canvas id="scratch-canvas"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="countdown-section" id="countdown">
+            <div class="content-box">
+                <h3 class="section-title">The Big Day Appoaches</h3>
+                <div class="countdown-container" id="countdown-timer">
+                    <div class="time-box">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-box">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map & Venue Section -->
+        <section class="map-section" id="venue">
+            <div class="content-box glassmorphism">
+                <h3 class="section-title">Venue Location</h3>
+                <p class="venue-address">[VENUE NAME]<br>[Address Placeholder]</p>
+                <div class="map-container">
+                    <!-- Placeholder map iframe - will replace with actual address later -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.064506305608!2d77.22485507548817!3d28.627827875667364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd347c6114eb%3A0xcda65ea9b0cb6!2sIndia%20Gate!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Section -->
+        <section class="rsvp-section" id="rsvp">
+            <div class="content-box form-box">
+                <h3 class="section-title">RSVP</h3>
+                <p class="rsvp-subtitle">Please let us know if you can make it</p>
+                
+                <form id="rsvp-form" class="custom-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Coming to the event?</label>
+                        <div class="radio-group">
+                            <label class="radio-container">Yes, Insha'Allah
+                                <input type="radio" checked="checked" name="attendance" value="yes">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="radio-container">Regretfully decline
+                                <input type="radio" name="attendance" value="no">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Wishes Section -->
+        <section class="wishes-section" id="wishes">
+            <div class="content-box glassmorphism">
+                <h3 class="wishes-title">With Best Compliments & Wishes</h3>
+                <p class="wishes-text">From near and dear ones</p>
+                
+                <div class="divider" style="margin-top: 3rem;">
+                    <span class="line"></span>
+                    <span class="icon">✦</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; Created with Love</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
